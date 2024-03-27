@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        fontFamily: "Poppins",
         brightness: Brightness.dark,
       ),
-      home: const NoteView(),
+      home:  const NoteView(),
     );
   }
 }
-
