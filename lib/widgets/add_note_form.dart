@@ -5,6 +5,8 @@ import 'package:note_app/models/note_model.dart';
 import 'package:note_app/widgets/custom_button.dart';
 import 'package:note_app/widgets/custom_textfield.dart';
 
+import 'color_list_view.dart';
+
 class AddNoteForm extends StatefulWidget {
   const AddNoteForm({
     super.key,
@@ -40,6 +42,9 @@ class _AddNoteFormState extends State<AddNoteForm> {
             onSaved: (value) {
               subtitle = value;
             },
+          ),
+          const ColorListView(
+            isActive: true,
           ),
           BlocBuilder<NoteCubit, NoteState>(
             builder: (context, state) {
